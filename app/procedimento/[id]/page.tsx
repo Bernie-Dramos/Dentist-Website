@@ -21,3 +21,9 @@ export default function ProcedurePage({ params }: ProcedurePageProps) {
     </main>
   )
 }
+
+export function generateStaticParams() {
+  return procedures.map((procedure) => ({
+    id: procedure.id,
+  }))
+}

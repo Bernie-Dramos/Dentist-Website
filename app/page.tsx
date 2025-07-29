@@ -2,12 +2,12 @@ import Hero from "@/components/hero"
 import AboutClinic from "@/components/about-clinic"
 import FeaturedProcedures from "@/components/featured-procedures"
 import WhyChooseUs from "@/components/why-choose-us"
-import CallToAction from "@/components/call-to-action"
 import Testimonials from "@/components/testimonials"
+import CallToAction from "@/components/call-to-action"
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="min-h-screen">
       <Hero />
       <AboutClinic />
       <FeaturedProcedures />
