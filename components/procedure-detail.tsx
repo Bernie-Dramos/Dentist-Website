@@ -44,7 +44,7 @@ export default function ProcedureDetail({ procedure }: ProcedureDetailProps) {
                 <Clock className="h-5 w-5" />
                 <span>{procedure.duration}</span>
               </div>
-              <div className="text-3xl font-bold text-yellow-500">{procedure.price.toLocaleString()} MZN</div>
+              {/* Price removed */}
             </div>
             <p className="text-lg text-gray-700 leading-relaxed">{procedure.description}</p>
 
@@ -154,7 +154,7 @@ export default function ProcedureDetail({ procedure }: ProcedureDetailProps) {
                 </CardHeader>
                 <CardContent className="p-4">
                   <h3 className="font-semibold text-black mb-2">{relatedProcedure.name}</h3>
-                  <p className="text-yellow-500 font-bold">{relatedProcedure.price.toLocaleString()} MZN</p>
+                  {/* Price removed */}
                   <Button asChild className="w-full mt-4 bg-yellow-500 hover:bg-yellow-600 text-black">
                     <Link href={`/procedimento/${relatedProcedure.id}`}>Ver Detalhes</Link>
                   </Button>

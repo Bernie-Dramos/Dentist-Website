@@ -3,7 +3,7 @@ export const procedures = [
     id: "limpeza-dental",
     name: "Limpeza Dental",
     category: "preventiva",
-    price: 2000,
+    // price removed
     duration: "45 min",
     description:
       "Limpeza profissional completa para manter a saúde bucal em dia. Remove tártaro, placa bacteriana e manchas superficiais, deixando os dentes limpos e saudáveis.",
@@ -20,7 +20,7 @@ export const procedures = [
     id: "clareamento-dental",
     name: "Clareamento Dental",
     category: "estetica",
-    price: 5000,
+    // price removed
     duration: "1h 30min",
     description:
       "Tratamento estético avançado para clarear os dentes de forma segura e eficaz. Utilizamos tecnologia LED para resultados superiores e duradouros.",
@@ -37,7 +37,7 @@ export const procedures = [
     id: "implantes-dentarios",
     name: "Implantes Dentários",
     category: "cirurgia",
-    price: 15000,
+    // price removed
     duration: "2h",
     description:
       "Substituição de dentes perdidos com implantes de titânio de alta qualidade. Solução permanente e natural para recuperar o sorriso e a função mastigatória.",
@@ -54,7 +54,7 @@ export const procedures = [
     id: "ortodontia",
     name: "Ortodontia",
     category: "ortodontia",
-    price: 12000,
+    // price removed
     duration: "45 min",
     description:
       "Correção do alinhamento dos dentes com aparelhos modernos. Oferecemos opções tradicionais e estéticas para todas as idades.",
@@ -71,7 +71,7 @@ export const procedures = [
     id: "facetas-porcelana",
     name: "Facetas de Porcelana",
     category: "estetica",
-    price: 8000,
+    // price removed
     duration: "2h",
     description:
       "Lâminas ultrafinas de porcelana aplicadas sobre os dentes para corrigir imperfeições e criar um sorriso perfeito.",
@@ -88,7 +88,7 @@ export const procedures = [
     id: "canal-radicular",
     name: "Tratamento de Canal",
     category: "cirurgia",
-    price: 6000,
+    // price removed
     duration: "1h 30min",
     description:
       "Tratamento endodôntico para salvar dentes com polpa infectada ou danificada. Procedimento indolor com tecnologia rotativa.",
@@ -105,7 +105,7 @@ export const procedures = [
     id: "protese-dentaria",
     name: "Prótese Dentária",
     category: "cirurgia",
-    price: 10000,
+    // price removed
     duration: "1h",
     description:
       "Próteses fixas e removíveis personalizadas para substituir dentes perdidos. Materiais de alta qualidade para conforto e durabilidade.",
@@ -122,7 +122,7 @@ export const procedures = [
     id: "cirurgia-siso",
     name: "Extração do Siso",
     category: "cirurgia",
-    price: 4000,
+    // price removed
     duration: "1h",
     description:
       "Remoção segura dos dentes do siso com técnicas minimamente invasivas. Pós-operatório confortável com acompanhamento completo.",
@@ -139,7 +139,7 @@ export const procedures = [
     id: "periodontia",
     name: "Tratamento Periodontal",
     category: "preventiva",
-    price: 3500,
+    // price removed
     duration: "1h",
     description:
       "Tratamento especializado para doenças da gengiva e estruturas de suporte dos dentes. Previne a perda dentária e mantém a saúde bucal.",
@@ -156,7 +156,7 @@ export const procedures = [
     id: "odontopediatria",
     name: "Odontopediatria",
     category: "preventiva",
-    price: 2500,
+    // price removed
     duration: "30 min",
     description:
       "Cuidados dentários especializados para crianças em ambiente acolhedor e divertido. Criamos experiências positivas para os pequenos pacientes.",

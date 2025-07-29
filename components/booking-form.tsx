@@ -214,7 +214,7 @@ export default function BookingForm() {
                   <SelectContent>
                     {procedures.map((procedure) => (
                       <SelectItem key={procedure.id} value={procedure.name}>
-                        {procedure.name} - {procedure.price.toLocaleString()} MZN
+                        {procedure.name}
                       </SelectItem>
                     ))}
                   </SelectContent>

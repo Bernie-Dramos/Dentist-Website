@@ -73,7 +73,7 @@ export default function ProcedureCatalog() {
                 <CardTitle className="text-xl font-bold text-black mb-3">{procedure.name}</CardTitle>
                 <p className="text-gray-600 mb-4 line-clamp-3">{procedure.description}</p>
                 <div className="flex items-center justify-between">
-                  <div className="text-2xl font-bold text-yellow-500">{procedure.price.toLocaleString()} MZN</div>
+                  {/* Price removed */}
                   <div className="text-sm text-gray-500">{procedure.duration}</div>
                 </div>
               </CardContent>

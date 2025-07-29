@@ -52,7 +52,7 @@ export default function FeaturedProcedures() {
                 <CardContent className="p-6">
                   <CardTitle className="text-xl font-bold text-black mb-3">{procedure.name}</CardTitle>
                   <p className="text-gray-600 mb-4 line-clamp-3">{procedure.description}</p>
-                  <div className="text-2xl font-bold text-yellow-500">{procedure.price.toLocaleString()} MZN</div>
+                  {/* Price removed */}
                 </CardContent>
                 <CardFooter className="p-6 pt-0">
                   <Button asChild className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
