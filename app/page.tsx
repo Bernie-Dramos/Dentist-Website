@@ -1,3 +1,4 @@
+import React from "react"
 import Hero from "@/components/hero"
 import AboutClinic from "@/components/about-clinic"
 import FeaturedProcedures from "@/components/featured-procedures"
