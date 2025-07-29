@@ -1,165 +1,172 @@
-export interface Procedure {
-  id: string
-  name: string
-  price: string
-  description: string
-  category: "estetica" | "ortodontia" | "cirurgia" | "preventiva" | "restauradora"
-  image: string
-  duration: string
-  availability: "available" | "limited" | "consultation"
-  availableSlots?: string[]
-}
-
-export const procedures: Procedure[] = [
+export const procedures = [
   {
     id: "limpeza-dental",
     name: "Limpeza Dental",
-    price: "2.000 MZN",
-    description:
-      "Limpeza profissional completa para manter seus dentes saudáveis e prevenir doenças gengivais. Inclui remoção de tártaro, polimento e orientações de higiene bucal.",
     category: "preventiva",
-    image: "/placeholder.svg?height=300&width=400&text=Limpeza+Dental",
-    duration: "45 minutos",
-    availability: "available",
-    availableSlots: ["09:00", "10:30", "14:00", "15:30", "16:30"],
+    price: 2000,
+    duration: "45 min",
+    description:
+      "Limpeza profissional completa para manter a saúde bucal em dia. Remove tártaro, placa bacteriana e manchas superficiais, deixando os dentes limpos e saudáveis.",
+    image: "/placeholder.svg?height=300&width=400",
+    benefits: [
+      "Remove tártaro e placa bacteriana",
+      "Previne doenças gengivais",
+      "Deixa os dentes mais brancos",
+      "Hálito mais fresco",
+      "Detecção precoce de problemas",
+    ],
   },
   {
     id: "clareamento-dental",
     name: "Clareamento Dental",
-    price: "5.000 MZN",
-    description:
-      "Tratamento estético para clarear os dentes de forma segura e eficaz. Utilizamos tecnologia LED para resultados rápidos e duradouros.",
     category: "estetica",
-    image: "/placeholder.svg?height=300&width=400&text=Clareamento+Dental",
-    duration: "90 minutos",
-    availability: "available",
-    availableSlots: ["09:00", "11:00", "14:00", "16:00"],
+    price: 5000,
+    duration: "1h 30min",
+    description:
+      "Tratamento estético avançado para clarear os dentes de forma segura e eficaz. Utilizamos tecnologia LED para resultados superiores e duradouros.",
+    image: "/placeholder.svg?height=300&width=400",
+    benefits: [
+      "Dentes até 8 tons mais brancos",
+      "Procedimento seguro e indolor",
+      "Resultados imediatos",
+      "Tecnologia LED avançada",
+      "Aumento da autoestima",
+    ],
   },
   {
     id: "implantes-dentarios",
     name: "Implantes Dentários",
-    price: "15.000 MZN",
-    description:
-      "Substituição de dentes perdidos com implantes de titânio de alta qualidade. Solução permanente e natural para recuperar seu sorriso.",
     category: "cirurgia",
-    image: "/placeholder.svg?height=300&width=400&text=Implantes+Dentários",
-    duration: "2 horas",
-    availability: "consultation",
+    price: 15000,
+    duration: "2h",
+    description:
+      "Substituição de dentes perdidos com implantes de titânio de alta qualidade. Solução permanente e natural para recuperar o sorriso e a função mastigatória.",
+    image: "/placeholder.svg?height=300&width=400",
+    benefits: [
+      "Solução permanente",
+      "Aparência natural",
+      "Preserva o osso maxilar",
+      "Não afeta dentes adjacentes",
+      "Alta taxa de sucesso",
+    ],
   },
   {
     id: "ortodontia",
     name: "Ortodontia",
-    price: "12.000 MZN",
+    category: "ortodontia",
+    price: 12000,
+    duration: "45 min",
     description:
       "Correção do alinhamento dos dentes com aparelhos modernos. Oferecemos opções tradicionais e estéticas para todas as idades.",
-    category: "ortodontia",
-    image: "/placeholder.svg?height=300&width=400&text=Ortodontia",
-    duration: "Tratamento longo",
-    availability: "limited",
-    availableSlots: ["09:00", "14:00"],
-  },
-  {
-    id: "canal-radicular",
-    name: "Tratamento de Canal",
-    price: "8.000 MZN",
-    description:
-      "Tratamento endodôntico para salvar dentes com infecção ou dano na polpa. Procedimento indolor com anestesia local.",
-    category: "restauradora",
-    image: "/placeholder.svg?height=300&width=400&text=Tratamento+de+Canal",
-    duration: "90 minutos",
-    availability: "available",
-    availableSlots: ["09:00", "11:00", "15:00"],
+    image: "/placeholder.svg?height=300&width=400",
+    benefits: [
+      "Dentes perfeitamente alinhados",
+      "Melhora da mastigação",
+      "Facilita a higienização",
+      "Aumenta a autoconfiança",
+      "Opções estéticas disponíveis",
+    ],
   },
   {
     id: "facetas-porcelana",
     name: "Facetas de Porcelana",
-    price: "18.000 MZN",
-    description:
-      "Lâminas ultrafinas de porcelana para transformar completamente seu sorriso. Resultado natural e duradouro.",
     category: "estetica",
-    image: "/placeholder.svg?height=300&width=400&text=Facetas+de+Porcelana",
-    duration: "2 sessões",
-    availability: "consultation",
+    price: 8000,
+    duration: "2h",
+    description:
+      "Lâminas ultrafinas de porcelana aplicadas sobre os dentes para corrigir imperfeições e criar um sorriso perfeito.",
+    image: "/placeholder.svg?height=300&width=400",
+    benefits: [
+      "Sorriso perfeito instantâneo",
+      "Corrige múltiplas imperfeições",
+      "Material resistente e durável",
+      "Aparência natural",
+      "Mínimo desgaste dental",
+    ],
   },
   {
-    id: "extracao-siso",
-    name: "Extração de Siso",
-    price: "4.000 MZN",
-    description:
-      "Remoção segura de dentes do siso impactados ou problemáticos. Procedimento realizado com sedação se necessário.",
+    id: "canal-radicular",
+    name: "Tratamento de Canal",
     category: "cirurgia",
-    image: "/placeholder.svg?height=300&width=400&text=Extração+de+Siso",
-    duration: "60 minutos",
-    availability: "available",
-    availableSlots: ["09:00", "10:30", "14:00"],
+    price: 6000,
+    duration: "1h 30min",
+    description:
+      "Tratamento endodôntico para salvar dentes com polpa infectada ou danificada. Procedimento indolor com tecnologia rotativa.",
+    image: "/placeholder.svg?height=300&width=400",
+    benefits: [
+      "Salva o dente natural",
+      "Elimina a dor",
+      "Procedimento indolor",
+      "Tecnologia avançada",
+      "Alta taxa de sucesso",
+    ],
   },
   {
     id: "protese-dentaria",
     name: "Prótese Dentária",
-    price: "10.000 MZN",
+    category: "cirurgia",
+    price: 10000,
+    duration: "1h",
     description:
-      "Próteses parciais ou totais para restaurar função mastigatória e estética. Materiais de alta qualidade e ajuste perfeito.",
-    category: "restauradora",
-    image: "/placeholder.svg?height=300&width=400&text=Prótese+Dentária",
-    duration: "Múltiplas sessões",
-    availability: "consultation",
+      "Próteses fixas e removíveis personalizadas para substituir dentes perdidos. Materiais de alta qualidade para conforto e durabilidade.",
+    image: "/placeholder.svg?height=300&width=400",
+    benefits: [
+      "Restaura a função mastigatória",
+      "Melhora a fala",
+      "Aparência natural",
+      "Conforto garantido",
+      "Materiais de qualidade",
+    ],
+  },
+  {
+    id: "cirurgia-siso",
+    name: "Extração do Siso",
+    category: "cirurgia",
+    price: 4000,
+    duration: "1h",
+    description:
+      "Remoção segura dos dentes do siso com técnicas minimamente invasivas. Pós-operatório confortável com acompanhamento completo.",
+    image: "/placeholder.svg?height=300&width=400",
+    benefits: [
+      "Técnica minimamente invasiva",
+      "Pós-operatório confortável",
+      "Previne complicações futuras",
+      "Acompanhamento completo",
+      "Recuperação rápida",
+    ],
   },
   {
     id: "periodontia",
     name: "Tratamento Periodontal",
-    price: "6.000 MZN",
-    description:
-      "Tratamento especializado para doenças da gengiva e estruturas de suporte dos dentes. Prevenção e tratamento da periodontite.",
     category: "preventiva",
-    image: "/placeholder.svg?height=300&width=400&text=Tratamento+Periodontal",
-    duration: "60 minutos",
-    availability: "available",
-    availableSlots: ["10:00", "11:30", "15:00", "16:30"],
+    price: 3500,
+    duration: "1h",
+    description:
+      "Tratamento especializado para doenças da gengiva e estruturas de suporte dos dentes. Previne a perda dentária e mantém a saúde bucal.",
+    image: "/placeholder.svg?height=300&width=400",
+    benefits: [
+      "Trata doenças gengivais",
+      "Previne perda dentária",
+      "Melhora a saúde bucal",
+      "Reduz inflamação",
+      "Fortalece as gengivas",
+    ],
   },
   {
     id: "odontopediatria",
     name: "Odontopediatria",
-    price: "3.000 MZN",
-    description:
-      "Cuidados dentários especializados para crianças. Ambiente acolhedor e técnicas adaptadas para os pequenos pacientes.",
     category: "preventiva",
-    image: "/placeholder.svg?height=300&width=400&text=Odontopediatria",
-    duration: "45 minutos",
-    availability: "available",
-    availableSlots: ["09:00", "10:00", "14:00", "15:00", "16:00"],
+    price: 2500,
+    duration: "30 min",
+    description:
+      "Cuidados dentários especializados para crianças em ambiente acolhedor e divertido. Criamos experiências positivas para os pequenos pacientes.",
+    image: "/placeholder.svg?height=300&width=400",
+    benefits: [
+      "Ambiente acolhedor para crianças",
+      "Profissionais especializados",
+      "Prevenção desde cedo",
+      "Experiência positiva",
+      "Educação sobre higiene bucal",
+    ],
   },
-]
-
-export const testimonials = [
-  {
-    id: 1,
-    name: "Maria Santos",
-    location: "Maputo",
-    text: "ODONTO VIDA transformou completamente meu sorriso! O atendimento é excepcional e os resultados superaram minhas expectativas.",
-    rating: 5,
-    image: "/placeholder.svg?height=80&width=80&text=MS",
-  },
-  {
-    id: 2,
-    name: "João Machel",
-    location: "Matola",
-    text: "Profissionais altamente qualificados e equipamentos modernos. Recomendo a todos que buscam excelência em cuidados dentários.",
-    rating: 5,
-    image: "/placeholder.svg?height=80&width=80&text=JM",
-  },
-  {
-    id: 3,
-    name: "Ana Mondlane",
-    location: "Beira",
-    text: "Fiz meu tratamento ortodôntico aqui e estou muito satisfeita. Equipe atenciosa e resultados incríveis!",
-    rating: 5,
-    image: "/placeholder.svg?height=80&width=80&text=AM",
-  },
-]
-
-export const stats = [
-  { number: "10.000+", label: "Sorrisos Criados" },
-  { number: "15+", label: "Anos de Experiência" },
-  { number: "98%", label: "Satisfação dos Pacientes" },
-  { number: "24/7", label: "Suporte de Emergência" },
 ]
